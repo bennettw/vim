@@ -24,8 +24,8 @@ autocmd FileType c,cpp  set formatoptions=croql cindent comments=sr:/*,mb:*,ex:*
 
 " mappings
 let mapleader = ","
-map <C-h> :bp<CR>
-map <C-l> :bn<CR>
+map <C-h> :bp!<CR>
+map <C-l> :bn!<CR>
 imap <Leader><Leader> <Esc>:w<CR>
 map <Leader><Leader> :w<CR>
 map <Leader>v :e ~/.vimrc<CR>
@@ -43,11 +43,12 @@ nmap OO O<CR><Esc>ki
 imap <Leader><Tab> <C-p>
 imap <C-BS> <C-w>  " ctrl backspace to delete word
 nmap <C-BS> daw
+nmap <Leader>w <C-w>
 " terminal colors
 set t_Co=256
 
 " ruby
-imap <c-l> <space>=><space>
+imap <c-l> <space>=>
 nnoremap <CR> :nohlsearch<CR>
 
 " dont use arrow keys
