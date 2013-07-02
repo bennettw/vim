@@ -40,7 +40,9 @@ map <F3> :NERDTree<CR>
 map <Leader>f <C-w><C-w>
 nmap oo o<CR>
 nmap OO O<CR><Esc>ki
-
+imap <Leader><Tab> <C-p>
+imap <C-BS> <C-w>  " ctrl backspace to delete word
+nmap <C-BS> daw
 " terminal colors
 set t_Co=256
 
@@ -75,3 +77,6 @@ let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 color wombat256bw
+
+"coffee script folding
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent shiftwidth=2 expandtab nofoldenable
