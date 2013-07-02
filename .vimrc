@@ -75,3 +75,9 @@ let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
 color wombat256bw
+
+
+" gvim settings
+set guioptions-=T
+set guioptions-=m
+set guioptions+=a
