@@ -80,3 +80,8 @@ color wombat256bw
 
 "coffee script folding
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent shiftwidth=2 expandtab nofoldenable
+
+" gvim settings
+set guioptions-=T
+set guioptions-=m
+set guioptions+=a
